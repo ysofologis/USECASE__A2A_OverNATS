@@ -1,0 +1,16 @@
+{
+  "name": "a2a-overnats",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Agent2Agent (A2A) protocol over NATS — custom protocol binding, client/agent libraries, examples",
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "demo": "pnpm --filter a2a-nats-client demo",
+    "echo-agent": "pnpm --filter a2a-nats-client echo-agent"
+  }
+}

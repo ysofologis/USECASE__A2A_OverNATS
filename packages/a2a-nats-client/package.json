@@ -1,0 +1,25 @@
+{
+  "name": "a2a-nats-client",
+  "version": "0.1.0",
+  "description": "Turnkey client/agent integration library: add A2A-over-NATS to any Node/TS agent in a few lines",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test dist/test/*.test.js",
+    "demo": "node dist/demo.js",
+    "echo-agent": "node dist/agents/echo-agent.js"
+  },
+  "keywords": ["a2a", "agent2agent", "nats", "agents", "openclaw"],
+  "license": "MIT",
+  "dependencies": {
+    "a2a-nats-binding": "workspace:*",
+    "nats": "^2.29.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^26.0.0"
+  }
+}

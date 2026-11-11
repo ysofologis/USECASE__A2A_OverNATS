@@ -1,0 +1,22 @@
+{
+  "name": "a2a-nats-binding",
+  "version": "0.1.0",
+  "description": "NATS protocol binding for the Agent2Agent (A2A) v1.0 protocol — shared wire contract, types and codecs",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test dist/test/*.test.js"
+  },
+  "keywords": ["a2a", "agent2agent", "nats", "agents", "protocol"],
+  "license": "MIT",
+  "dependencies": {
+    "nats": "^2.29.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^26.0.0"
+  }
+}
